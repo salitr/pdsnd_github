@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-data = {'chicago': '/Users/Saleh/Desktop/Udacity/python/chicago.csv',
-        'new york city': '/Users/Saleh/Desktop/Udacity/python/new_york_city.csv',
-        'washington': '/Users/Saleh/Desktop/Udacity/python/washington.csv'}
+data = {'chicago': 'chicago.csv',
+        'new york city': 'new_york_city.csv',
+        'washington': 'washington.csv'}
 
 name = input('Enter your name: ')
 print('Hello {},\n\nWelcome to the US bikeshare Data. \
@@ -178,18 +178,22 @@ def users_stats(df):
     print('Counts of user types is :', counts_of_user_types)
 
     # Display counts of gender
-    if 'Gender' in df.columns:
+    try:
         counts_of_gender = df['Gender'].value_counts()
         print('Counts of gender is :', counts_of_gender)
+    except:
+        print('\n\nThere\'s no Gender data avaiable for this citiy\n')
 
-    # Display earliest, most recent, and most common year of birth
-    if 'Birth Year' in df.columns:
+# Display earliest, most recent, and most common year of birth
+    try:
         earliest_year_of_birth = int(df['Birth Year'].min())
         print('The earliest year of birth :', earliest_year_of_birth)
         most_recent_year_of_birth = int(df['Birth Year'].max())
         print('The most recent year of birth :', most_recent_year_of_birth)
         most_common_year_of_birth = int(df['Birth Year'].mode()[0])
         print('The most common year of birth :', most_common_year_of_birth)
+    except:
+        print('\n\nThere\'s Birth Year data avaiable for this citiy\n')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
