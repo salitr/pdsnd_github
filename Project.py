@@ -2,9 +2,9 @@ import time
 import pandas as pd
 import numpy as np
 
-data = {'chicago': '/Users/Saleh/Desktop/Udacity/python/chicago.csv',
-        'new york city': '/Users/Saleh/Desktop/Udacity/python/new_york_city.csv',
-        'washington': '/Users/Saleh/Desktop/Udacity/python/washington.csv'}
+data = {'chicago': 'chicago.csv',
+        'new york city': 'new_york_city.csv',
+        'washington': 'washington.csv'}
 
 name = input('Enter your name: ')
 print('Hello {},\n\nWelcome to the US bikeshare Data. \
