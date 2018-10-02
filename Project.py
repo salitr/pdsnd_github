@@ -185,13 +185,15 @@ def users_stats(df):
         print('\n\nThere\'s no Gender data avaiable for this citiy\n')
 
 # Display earliest, most recent, and most common year of birth
-    if 'Birth Year' in df.columns:
+    try:
         earliest_year_of_birth = int(df['Birth Year'].min())
         print('The earliest year of birth :', earliest_year_of_birth)
         most_recent_year_of_birth = int(df['Birth Year'].max())
         print('The most recent year of birth :', most_recent_year_of_birth)
         most_common_year_of_birth = int(df['Birth Year'].mode()[0])
         print('The most common year of birth :', most_common_year_of_birth)
+    except:
+        print('\n\nThere\'s Birth Year data avaiable for this citiy\n')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
