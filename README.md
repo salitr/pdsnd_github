@@ -19,11 +19,11 @@ According to Udacity, the data are provided by Motivate, a bike share system pro
 
 
 Start Time | End Time | Trip Duration | Start Station | End Station | User Type
------------- | ------------- | -------------
+------------ | ------------- | ------------- | ------------ | ------------- | -------------
 e.g., 2017-01-01 00:07:57 | e.g., 2017-01-01 00:20:53 | in seconds - e.g., 776 | e.g., Broadway & Barry Ave | e.g., Sedgwick St & North Ave | Subscriber or Customer
 
 The Chicago and New York City files also have the following two columns:
 
 Gender | Birth Year
------------- | ------------- |
+------------ | -------------
 e.g., Male, Female | e.g., 1998
