@@ -17,14 +17,13 @@ Three city dataset files were used:
 #### The Datasets
 According to Udacity, the data are provided by Motivate, a bike share system provider for many major cities in the United States. It was randomly selected for the first six months of 2017 for all three cities. All three of the data files contain the same core six (6) columns:
 
-- Start Time (e.g., 2017-01-01 00:07:57)
-- End Time (e.g., 2017-01-01 00:20:53)
-- Trip Duration (in seconds - e.g., 776)
-- Start Station (e.g., Broadway & Barry Ave)
-- End Station (e.g., Sedgwick St & North Ave)
--User Type (Subscriber or Customer)
+
+Start Time | End Time | Trip Duration | Start Station | End Station | User Type
+------------ | ------------- | -------------
+e.g., 2017-01-01 00:07:57 | e.g., 2017-01-01 00:20:53 | in seconds - e.g., 776 | e.g., Broadway & Barry Ave | e.g., Sedgwick St & North Ave | Subscriber or Customer
 
 The Chicago and New York City files also have the following two columns:
 
-- Gender
-- Birth Year
+Gender | Birth Year
+------------ | ------------- |
+e.g., Male, Female | e.g., 1998
